@@ -1,0 +1,44 @@
+/* Reset CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #eee;
+}
+
+
+.header .first > a {
+    font-size: 80px;
+    text-align: center;
+    font-family: Pacifico, cursive;
+}
+
+.deal .left-col .content-heading {
+    font-size: 40px;
+}
+
+.deal .right-col > div:first-of-type {
+    opacity: 50%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.deal .right-col .percent {
+    top: 164px;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.deal button {
+    font-size: 24px;
+}
+
+.other-deals .deal-footer .time {
+    font-size: 12px;
+}
