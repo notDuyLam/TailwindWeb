@@ -8,16 +8,7 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #eee;
-}
 
-
-.header .first > a {
-    font-size: 80px;
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-}
 
 .deal .left-col .content-heading {
     font-size: 40px;

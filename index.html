@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="bg-[#eee]" lang="en">
 <head>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="header flex m-7 justify-center items-center max-w-screen-lg mx-auto">
+    <div class="header  flex m-7 justify-center items-center max-w-screen-lg mx-auto">
         <!-- first half of column -->
         <div class="first w-1/2">
-            <a href="#" class="block">Dealers</a>
+            <a href="#" class="block text-[80px] text-center font-[Pacifico]">Dealers</a>
             <div class="nav flex justify-center items-center font-bold">
                 <a href="#" class="inline-block border-r-2 border-dashed border-gray-400 px-2 min-h-1">Home</a>
                 <a href="#" class="inline-block border-r-2 border-dashed border-gray-400 px-2 min-h-1">About</a>
@@ -26,17 +26,20 @@
         </div>
         
         <!-- second half of column -->
-        <div class="second w-1/2 relative">
+        <div class="second w-1/2 relative flex justify-center">
             <!-- Picture of letter -->
             <img src="imgs/letter_use.png" alt="" class="w-full"> 
             <!-- Things on the pic -->
-            <div class="absolute top-10 w-full flex items-center justify-center font-bold">
-                Sign up for free to get deals directly to your mailbox
+            <div class="inside absolute top-10 w-[90%] justify-center items-center flex flex-col">
+                <div class="font-bold">
+                    Sign up for free to get deals directly to your mailbox
+                </div>
+                <div class="flex top-20 w-full h-10 justify-between">
+                    <input class="w-3/5 border-2 h-10" type="email" placeholder="Enter Your E-mail Address">
+                    <button class="w-1/4 h-10 px-2 bg-gradient-to-b from-blue-300 to-blue-500 border-2 border-blue-500">Subscribe Me</button>
+                </div>
             </div>
-            <div class="absolute flex top-20 w-full h-10">
-                <input class="absolute w-3/5 border-2 left-10 h-10" type="email" placeholder="Enter Your E-mail Address">
-                <button class="absolute w-1/4 h-10 left-96 bg-blue-500 border-2 border-black px-2">Subscribe Me</button>
-            </div>
+            
             
         </div>
         
@@ -84,7 +87,7 @@
                         </div>
                     </div>
                     
-                    <button class="bg-green-500 p-4 mt-4 w-4/5 rounded font-bold">Buy this deal -27$</button>
+                    <button class="bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 p-4 mt-4 w-4/5 rounded font-bold">Buy this deal -27$</button>
                 </div>
             </div>
     
@@ -116,7 +119,7 @@
                     </div>
                     <div class="deal-footer flex w-11/12 my-4">
                         <div class="time w-4/6 py-2">71 days 23 hrs 38 mins 36 sec</div>
-                        <button class="w-2/5 py-2 bg-green-500 rounded font-bold">SEE DEAL</button>
+                        <button class="w-2/5 py-2 bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 rounded font-bold">SEE DEAL</button>
                     </div>
                     
                 </div>
@@ -142,7 +145,7 @@
                     </div>
                     <div class="deal-footer flex w-11/12 my-4">
                         <div class="time w-4/6 py-2">71 days 23 hrs 38 mins 36 sec</div>
-                        <button class="w-2/5 py-2 bg-green-500 rounded font-bold">SEE DEAL</button>
+                        <button class="w-2/5 py-2 bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 rounded font-bold">SEE DEAL</button>
                     </div>
                     
                 </div>
@@ -168,7 +171,7 @@
                     </div>
                     <div class="deal-footer flex w-11/12 my-4">
                         <div class="time w-4/6 py-2">71 days 23 hrs 38 mins 36 sec</div>
-                        <button class="w-2/5 py-2 bg-green-500 rounded font-bold">SEE DEAL</button>
+                        <button class="w-2/5 py-2 bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 rounded font-bold">SEE DEAL</button>
                     </div>
                     
                 </div>
