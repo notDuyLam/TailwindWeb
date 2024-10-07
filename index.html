@@ -5,219 +5,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Website</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="header  flex m-7 justify-center items-center max-w-screen-lg mx-auto">
-        <!-- first half of column -->
-        <div class="first w-1/2">
-            <a href="#" class="block text-[80px] text-center font-[Pacifico]">Dealers</a>
-            <div class="nav flex justify-center items-center font-bold">
-                <a href="#" class="inline-block border-r-2 border-dashed border-gray-400 px-2 min-h-1">Home</a>
-                <a href="#" class="inline-block border-r-2 border-dashed border-gray-400 px-2 min-h-1">About</a>
-                <a href="#" class="inline-block border-r-2 border-dashed border-gray-400 px-2 min-h-1">All Deals</a>
-                <a href="#" class="inline-block border-r-2 border-dashed border-gray-400 px-2 min-h-1">Submit Your Deal</a>
-                <a href="#" class="inline-block px-2 min-h-1"><i class="fas fa-envelope"></i></a>
+    <!-- class="content-wrapper max-w-[1140px] w-[95%] text-base mx-auto my-2 bg-slate-50 rounded-md" -->
+    <div class="content-wrapper max-w-[1140px] w-[95%] text-base mx-auto my-2">
+        <div class="header flex m-7 justify-center items-center h-auto">
+            <!-- first half of column -->
+            <div class="first w-1/2 flex flex-col h-20">
+                <a href="#" class="block text-[80px] text-center font-[Pacifico] h-3/4">Dealers</a>
+                <div class="nav flex justify-center items-center font-bold">
+                    <a href="#" class="inline-block border-r-2 border-dashed border-gray-400 px-2 min-h-1">Home</a>
+                    <a href="#" class="inline-block border-r-2 border-dashed border-gray-400 px-2 min-h-1">About</a>
+                    <a href="#" class="inline-block border-r-2 border-dashed border-gray-400 px-2 min-h-1">All Deals</a>
+                    <a href="#" class="inline-block border-r-2 border-dashed border-gray-400 px-2 min-h-1">Submit Your Deal</a>
+                    <a href="#" class="inline-block px-2 min-h-1"><i class="fas fa-envelope"></i></a>
+                </div>
+                
+            </div>
+            
+            <!-- second half of column -->
+            <div class="second w-1/2 relative flex justify-center">
+                <!-- Picture of letter -->
+                <img src="imgs/letter_use.png" alt="" class="w-full"> 
+                <!-- Things on the pic -->
+                <div class="inside absolute top-10 w-[90%] justify-center items-center flex flex-col">
+                    <div class="font-bold">
+                        Sign up for free to get deals directly to your mailbox
+                    </div>
+                    <div class="flex top-20 w-full h-10 justify-between">
+                        <input class="w-3/5 border-2 h-10" type="email" placeholder="Enter Your E-mail Address">
+                        <button class="w-1/4 h-10 px-2 bg-gradient-to-b from-blue-300 to-blue-500 border-2 border-blue-500">Subscribe Me</button>
+                    </div>
+                </div>
+                
+                
             </div>
             
         </div>
+        <div class="outside-content p-4">
+            <div class="content m-7 pl-8 max-w-screen-lg mx-auto bg-white">
+                <!-- Main deal -->
+                <div class="deal flex">
+                    <div class="left-col w-2/3">
+                        <div class="content-heading font-bold py-8 text-[40px]">This is one very amazing deal</div>
+                        <img class="w-full p-2 border-2" src="imgs/red.jpg" alt="">
+                        <div class="py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga esse asperiores impedit veritatis, labore quaerat earum vero doloribus, facere id unde nostrum consectetur in quidem, sint accusamus exercitationem maiores ea.</div>
+                        
+                    </div>
         
-        <!-- second half of column -->
-        <div class="second w-1/2 relative flex justify-center">
-            <!-- Picture of letter -->
-            <img src="imgs/letter_use.png" alt="" class="w-full"> 
-            <!-- Things on the pic -->
-            <div class="inside absolute top-10 w-[90%] justify-center items-center flex flex-col">
-                <div class="font-bold">
-                    Sign up for free to get deals directly to your mailbox
+                    <div class="right-col w-1/3 relative flex flex-col items-center">
+                        <!-- image of a ticket -->
+                        <img class="h-3/4 w-4/5 mt-10 block" src="imgs/ticket.jpg" alt="">
+        
+                        <!-- things on the img -->
+                        <div class="inside absolute flex flex-col top-20 justify-center items-center">
+                            <div class="flex items-center justify-center opacity-50 font-[600] text-[20px] p-4">This deal will end in: </div>
+                            <div class="items-center justify-center font-bold p-4">6 days 1 hrs 52 min 56 sec</div>
+                            <div class="items-center justify-center font-bold opacity-50 p-2">Discount</div>
+                            <div class="percent items-center justify-center text-[64px] font-[700] p-5">43%</div>
+            
+                            <div class="top-64 w-4/5 flex">
+                                <div class="ticket-left-col w-1/2 text-center">
+                                    <div class="font-bold opacity-50">Deal Value</div>
+                                    <div class="font-bold">47$</div>
+                                    <!-- tweet icon with likes -->
+                                    <div class="flex items-center justify-center mt-40">
+                                        <div class="text-blue-500"><i class="fab fa-twitter text-blue-500 pr-1"></i>Tweet</div>
+                                        <div class="ml-1 text-gray-700 text-sm border-1 border-black-500">9</div>
+                                    </div>
+                                </div>
+                                <div class="ticket-right-col w-1/2 text-center">
+                                    <div class="font-bold opacity-50">You Save</div>
+                                    <div class="font-bold">20$</div>
+                                    <!-- fb icon with likes -->
+                                    <div class="flex items-center justify-center mt-40">
+                                        <div class="text-blue-500"><i class="fab fa-facebook text-blue-600 pr-1"></i>Like</div>
+                                        <div class="ml-1 text-gray-700 text-sm border-1 border-black-500">5</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <button class="bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 p-4 mt-4 w-4/5 rounded font-bold">Buy this deal -27$</button>
+                    </div>
                 </div>
-                <div class="flex top-20 w-full h-10 justify-between">
-                    <input class="w-3/5 border-2 h-10" type="email" placeholder="Enter Your E-mail Address">
-                    <button class="w-1/4 h-10 px-2 bg-gradient-to-b from-blue-300 to-blue-500 border-2 border-blue-500">Subscribe Me</button>
+        
+                <!-- Name of brand -->
+                <div class="brand pr-8 mx-8">
+                    <img class="border-t-2 border-gray-300 border-b-2 border-gray-300 border-dashed" src="imgs/brand.png" alt="">
                 </div>
+        
+                <!-- 3 other deal -->
+                <div class="other-deals flex">
+                    <div class="deal-first w-1/3 border-r-2 border-gray-300 border-dashed p-4">
+                        <div class="font-bold pb-4">Lorem ipsum dolor Deal</div>
+                        <div class="deal-content border-2 p-2 w-11/12">
+                            <img src="imgs/red.jpg" alt="">
+                            <div class="flex">
+                                <div class="w-1/3 border-r-2 border-dashed text-center font-bold py-2">
+                                    <div class="opacity-50">Deal Value</div>
+                                    <div class="">47$</div>
+                                </div>
+                                <div class="w-1/3 text-center font-bold py-2">
+                                    <div class="opacity-50">Discount</div>
+                                    <div class="">43%</div>
+                                </div>
+                                <div class="w-1/3 border-l-2 border-dashed text-center font-bold py-2">
+                                    <div class="opacity-50">You Save</div>
+                                    <div class="">20$</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal-footer flex w-11/12 my-4">
+                            <div class="time w-4/6 py-2">71 days 23 hrs 38 mins 36 sec</div>
+                            <button class="w-2/5 py-2 bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 rounded font-bold">SEE DEAL</button>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="deal-second w-1/3 p-4">
+                        <div class="font-bold pb-4">Lorem ipsum dolor Deal</div>
+                        <div class="deal-content border-2 p-2 w-11/12">
+                            <img src="imgs/red.jpg" alt="">
+                            <div class="flex">
+                                <div class="w-1/3 border-r-2 border-dashed text-center font-bold py-2">
+                                    <div class="opacity-50">Deal Value</div>
+                                    <div class="">47$</div>
+                                </div>
+                                <div class="w-1/3 text-center font-bold py-2">
+                                    <div class="opacity-50">Discount</div>
+                                    <div class="">43%</div>
+                                </div>
+                                <div class="w-1/3 border-l-2 border-dashed text-center font-bold py-2">
+                                    <div class="opacity-50">You Save</div>
+                                    <div class="">20$</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal-footer flex w-11/12 my-4">
+                            <div class="time w-4/6 py-2">71 days 23 hrs 38 mins 36 sec</div>
+                            <button class="w-2/5 py-2 bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 rounded font-bold">SEE DEAL</button>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="deal-third w-1/3 border-l-2 border-gray-300 border-dashed p-4">
+                        <div class="font-bold pb-4">Lorem ipsum dolor Deal</div>
+                        <div class="deal-content border-2 p-2 w-11/12">
+                            <img src="imgs/red.jpg" alt="">
+                            <div class="flex">
+                                <div class="w-1/3 border-r-2 border-dashed text-center font-bold py-2">
+                                    <div class="opacity-50">Deal Value</div>
+                                    <div class="">47$</div>
+                                </div>
+                                <div class="w-1/3 text-center font-bold py-2">
+                                    <div class="opacity-50">Discount</div>
+                                    <div class="">43%</div>
+                                </div>
+                                <div class="w-1/3 border-l-2 border-dashed text-center font-bold py-2">
+                                    <div class="opacity-50">You Save</div>
+                                    <div class="">20$</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal-footer flex w-11/12 my-4">
+                            <div class="time w-4/6 py-2">71 days 23 hrs 38 mins 36 sec</div>
+                            <button class="w-2/5 py-2 bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 rounded font-bold">SEE DEAL</button>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="content-footer flex">
+                    <div class="footer-first mb-4 w-1/3 pr-4 border-r-2 border-t-2 border-dashed border-gray-300">
+                        <div class="font-bold py-4">About Our Deals</div>
+                        <div class="opacity-70">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sit aspernatur adipisci sint quia enim earum, odio perspiciatis fugiat deleniti magni ducimus nesciunt quo delectus, quam nulla corporis minus temporibus.
+                        <br> <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem asperiores amet molestiae repellendus eius ducimus nisi voluptas. In, eveniet esse perferendis eius tenetur placeat dignissimos inventore harum quam magni libero.
+                        </div>
+                    </div>
+            
+                    <div class="footer-second mb-4 w-1/3 flex flex-col px-4">
+                        <div class="font-bold py-4 border-t-2 border-gray-300 border-dashed">Twitter Buzz</div>
+                        <div class="opacity-70 py-4 ">
+                            7 Photoshop tips for designing clean and morden website. <a class="underline text-green-500" href="">su.pr/1ruOpp</a>
+                            <div class="bg-gray-300 font-bold text-gray-500 text-center inline-block text-sm w-1/3 py-1 rounded my-4">1 Day Ago</div>
+                        </div>
+    
+                        <div class="opacity-70 py-4 border-t-2 border-dashed border-gray-300">
+                            7 Photoshop tips for designing clean and morden website. <a class="underline text-green-500" href="">su.pr/1ruOpp</a>
+                            <div class="bg-gray-300 font-bold text-gray-500 text-center inline-block text-sm w-1/3 py-1 rounded my-4">1 Day Ago</div>
+                        </div>
+                    </div>
+            
+                    <div class="footer-third flex flex-col mb-4 w-1/3 pr-8 border-l-2 border-t-2 border-dashed border-gray-300">
+                        <a class="heading font-bold p-4 pt-8 text-xl" href="#">Other Pages</a>
+                        <a class="heading text-green-600 m-4 mb-0 pb-4 border-b-2 border-dashed border-gray-300" href="#">Home</a>
+                        <a class="heading text-green-600 m-4 mb-0 pb-4 border-b-2 border-dashed border-gray-300" href="#">About Our Deals</a>
+                        <a class="heading text-green-600 m-4 mb-0 pb-4 border-b-2 border-dashed border-gray-300" href="#">All deals</a>
+                        <a class="heading text-green-600 m-4 mb-0 pb-4 border-b-2 border-dashed border-gray-300" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer flex justify-center items-center flex-col mb-20">
+            <div class="opacity-50">Copyright Infomation Goes Here 2012 All Rights Reserved.</div>
+            <div class="flex-row flex">
+                <div class="opacity-50">Designed by</div>
+                <div class="ml-2">Themes Kingdom</div>
             </div>
             
-            
-        </div>
-        
-    </div>
-    <div class="outside-content p-4">
-        <div class="content m-7 pl-8 max-w-screen-lg mx-auto bg-white">
-            <!-- Main deal -->
-            <div class="deal flex">
-                <div class="left-col w-2/3">
-                    <div class="content-heading font-bold py-8">This is one very amazing deal</div>
-                    <img class="w-full p-2 border-2" src="imgs/red.jpg" alt="">
-                    <div class="py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga esse asperiores impedit veritatis, labore quaerat earum vero doloribus, facere id unde nostrum consectetur in quidem, sint accusamus exercitationem maiores ea.</div>
-                    
-                </div>
-    
-                <div class="right-col w-1/3 relative flex flex-col items-center">
-                    <!-- image of a ticket -->
-                    <img class="h-3/4 w-4/5 mt-10 block" src="imgs/ticket.jpg" alt="">
-    
-                    <!-- things on the img -->
-                    <div class="absolute flex items-center justify-center top-20">This deal will end in: </div>
-                    <div class="absolute items-center justify-center top-32 font-bold">6 days 1 hrs 52 min 56 sec</div>
-                    <div class="absolute items-center justify-center top-40 font-bold opacity-50">Discount</div>
-                    <div class="percent absolute items-center justify-center">43%</div>
-    
-                    <div class="absolute top-64 w-4/5 flex">
-                        <div class="ticket-left-col w-1/2 text-center">
-                            <div class="font-bold opacity-50">Deal Value</div>
-                            <div class="font-bold">47$</div>
-                            <!-- tweet icon with likes -->
-                            <div class="flex items-center justify-center mt-40">
-                                <div class="text-blue-500"><i class="fab fa-twitter text-blue-500 pr-1"></i>Tweet</div>
-                                <div class="ml-1 text-gray-700 text-sm border-1 border-black-500">9</div>
-                            </div>
-                        </div>
-                        <div class="ticket-right-col w-1/2 text-center">
-                            <div class="font-bold opacity-50">You Save</div>
-                            <div class="font-bold">20$</div>
-                            <!-- fb icon with likes -->
-                            <div class="flex items-center justify-center mt-40">
-                                <div class="text-blue-500"><i class="fab fa-facebook text-blue-600 pr-1"></i>Like</div>
-                                <div class="ml-1 text-gray-700 text-sm border-1 border-black-500">5</div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <button class="bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 p-4 mt-4 w-4/5 rounded font-bold">Buy this deal -27$</button>
-                </div>
-            </div>
-    
-            <!-- Name of brand -->
-            <div class="brand pr-8 mx-8">
-                <img class="border-t-2 border-gray-300 border-b-2 border-gray-300 border-dashed" src="imgs/brand.png" alt="">
-            </div>
-    
-            <!-- 3 other deal -->
-            <div class="other-deals flex">
-                <div class="deal-first w-1/3 border-r-2 border-gray-300 border-dashed p-4">
-                    <div class="font-bold pb-4">Lorem ipsum dolor Deal</div>
-                    <div class="deal-content border-2 p-2 w-11/12">
-                        <img src="imgs/red.jpg" alt="">
-                        <div class="flex">
-                            <div class="w-1/3 border-r-2 border-dashed text-center font-bold py-2">
-                                <div class="opacity-50">Deal Value</div>
-                                <div class="">47$</div>
-                            </div>
-                            <div class="w-1/3 text-center font-bold py-2">
-                                <div class="opacity-50">Discount</div>
-                                <div class="">43%</div>
-                            </div>
-                            <div class="w-1/3 border-l-2 border-dashed text-center font-bold py-2">
-                                <div class="opacity-50">You Save</div>
-                                <div class="">20$</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="deal-footer flex w-11/12 my-4">
-                        <div class="time w-4/6 py-2">71 days 23 hrs 38 mins 36 sec</div>
-                        <button class="w-2/5 py-2 bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 rounded font-bold">SEE DEAL</button>
-                    </div>
-                    
-                </div>
-
-                <div class="deal-second w-1/3 p-4">
-                    <div class="font-bold pb-4">Lorem ipsum dolor Deal</div>
-                    <div class="deal-content border-2 p-2 w-11/12">
-                        <img src="imgs/red.jpg" alt="">
-                        <div class="flex">
-                            <div class="w-1/3 border-r-2 border-dashed text-center font-bold py-2">
-                                <div class="opacity-50">Deal Value</div>
-                                <div class="">47$</div>
-                            </div>
-                            <div class="w-1/3 text-center font-bold py-2">
-                                <div class="opacity-50">Discount</div>
-                                <div class="">43%</div>
-                            </div>
-                            <div class="w-1/3 border-l-2 border-dashed text-center font-bold py-2">
-                                <div class="opacity-50">You Save</div>
-                                <div class="">20$</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="deal-footer flex w-11/12 my-4">
-                        <div class="time w-4/6 py-2">71 days 23 hrs 38 mins 36 sec</div>
-                        <button class="w-2/5 py-2 bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 rounded font-bold">SEE DEAL</button>
-                    </div>
-                    
-                </div>
-
-                <div class="deal-third w-1/3 border-l-2 border-gray-300 border-dashed p-4">
-                    <div class="font-bold pb-4">Lorem ipsum dolor Deal</div>
-                    <div class="deal-content border-2 p-2 w-11/12">
-                        <img src="imgs/red.jpg" alt="">
-                        <div class="flex">
-                            <div class="w-1/3 border-r-2 border-dashed text-center font-bold py-2">
-                                <div class="opacity-50">Deal Value</div>
-                                <div class="">47$</div>
-                            </div>
-                            <div class="w-1/3 text-center font-bold py-2">
-                                <div class="opacity-50">Discount</div>
-                                <div class="">43%</div>
-                            </div>
-                            <div class="w-1/3 border-l-2 border-dashed text-center font-bold py-2">
-                                <div class="opacity-50">You Save</div>
-                                <div class="">20$</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="deal-footer flex w-11/12 my-4">
-                        <div class="time w-4/6 py-2">71 days 23 hrs 38 mins 36 sec</div>
-                        <button class="w-2/5 py-2 bg-gradient-to-b from-green-300 to-green-500 border-green-500 border-2 rounded font-bold">SEE DEAL</button>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="content-footer flex">
-                <div class="footer-first mb-4 w-1/3 pr-4 border-r-2 border-t-2 border-dashed border-gray-300">
-                    <div class="font-bold py-4">About Our Deals</div>
-                    <div class="opacity-70">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sit aspernatur adipisci sint quia enim earum, odio perspiciatis fugiat deleniti magni ducimus nesciunt quo delectus, quam nulla corporis minus temporibus.
-                    <br> <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem asperiores amet molestiae repellendus eius ducimus nisi voluptas. In, eveniet esse perferendis eius tenetur placeat dignissimos inventore harum quam magni libero.
-                    </div>
-                </div>
-        
-                <div class="footer-second mb-4 w-1/3 flex flex-col px-4">
-                    <div class="font-bold py-4 border-t-2 border-gray-300 border-dashed">Twitter Buzz</div>
-                    <div class="opacity-70 py-4 ">
-                        7 Photoshop tips for designing clean and morden website. <a class="underline text-green-500" href="">su.pr/1ruOpp</a>
-                        <div class="bg-gray-300 font-bold text-gray-500 text-center inline-block text-sm w-1/3 py-1 rounded my-4">1 Day Ago</div>
-                    </div>
-
-                    <div class="opacity-70 py-4 border-t-2 border-dashed border-gray-300">
-                        7 Photoshop tips for designing clean and morden website. <a class="underline text-green-500" href="">su.pr/1ruOpp</a>
-                        <div class="bg-gray-300 font-bold text-gray-500 text-center inline-block text-sm w-1/3 py-1 rounded my-4">1 Day Ago</div>
-                    </div>
-                </div>
-        
-                <div class="footer-third flex flex-col mb-4 w-1/3 pr-8 border-l-2 border-t-2 border-dashed border-gray-300">
-                    <a class="heading font-bold p-4 pt-8 text-xl" href="#">Other Pages</a>
-                    <a class="heading text-green-600 m-4 mb-0 pb-4 border-b-2 border-dashed border-gray-300" href="#">Home</a>
-                    <a class="heading text-green-600 m-4 mb-0 pb-4 border-b-2 border-dashed border-gray-300" href="#">About Our Deals</a>
-                    <a class="heading text-green-600 m-4 mb-0 pb-4 border-b-2 border-dashed border-gray-300" href="#">All deals</a>
-                    <a class="heading text-green-600 m-4 mb-0 pb-4 border-b-2 border-dashed border-gray-300" href="#">Contact</a>
-                </div>
-            </div>
         </div>
     </div>
     
-    <div class="footer flex justify-center items-center flex-col mb-20">
-        <div class="opacity-50">Copyright Infomation Goes Here 2012 All Rights Reserved.</div>
-        <div class="flex-row flex">
-            <div class="opacity-50">Designed by</div>
-            <div class="ml-2">Themes Kingdom</div>
-        </div>
-        
-    </div>
 </body>
 </html>
